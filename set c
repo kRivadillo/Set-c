@@ -296,14 +296,14 @@ nav .icon-links {
     color: rgb(145, 250, 9);
     font-size: 1.8rem;
     font-weight: bold;
-    text-shadow: 0 0 0.2rem #444;
+    text-shadow: 0 0 0.2rem rgb(0, 0, 0);
 }
 
 .products .incel .incel-text span {
     color: rgb(255, 255, 255);
     font-size: 2.8rem;
     font-weight: bold;
-    text-shadow: 0 0 0.2rem #444;
+    text-shadow: 0 0 0.2rem rgb(0, 0, 0);
 }
 
 .products .incel .incel-text p {
@@ -416,6 +416,7 @@ nav .icon-links {
     -ms-flex-pack: center;
     justify-content: center;
     cursor: pointer;
+    text-decoration:none;
 }
 
 .product-description .add-to-cart-btn p {
@@ -553,7 +554,7 @@ font-size: 21px;
                                     <span class="f-product-price">₱18,899</span>
                                 </del>
                                 <ins>
-                                    <span class="f-cur-price">Now ₱15,999</span>
+                                    <span class="f-cur-price"><br>Now ₱15,999</span>
                                 </ins>
                                 <span class="f-product-unit"></span>
                             </p>
@@ -581,7 +582,7 @@ font-size: 21px;
                                     <span class="f-product-price">₱25,599</span>
                                 </del>
                                 <ins>
-                                    <span class="f-cur-price">Now ₱25,000</span>
+                                    <span class="f-cur-price"><br>Now ₱25,000</span>
                                 </ins>
                                 <span class="f-product-unit"></span>
                             </p>
@@ -608,7 +609,7 @@ font-size: 21px;
                                     <span class="f-product-price">₱30,999</span>
                                 </del>
                                 <ins>
-                                    <span class="f-cur-price">Now ₱30,000</span>
+                                    <span class="f-cur-price"><br>Now ₱30,000</span>
                                 </ins>
                                 <span class="f-product-unit"></span>
                             </p>
@@ -636,7 +637,7 @@ font-size: 21px;
                                     <span class="f-product-price">₱ 17,780</span>
                                 </del>
                                 <ins>
-                                    <span class="f-cur-price">Now ₱ 16,000</span>
+                                    <span class="f-cur-price"><br>Now ₱ 16,000</span>
                                 </ins>
                                 <span class="f-product-unit"></span>
                                 </ins>
@@ -650,7 +651,7 @@ font-size: 21px;
 
                     <div class="product-wrap Gusion Venom T-Shirt">
                         <div class="product-img">
-                            <img src="https://m.media-amazon.com/images/I/41+XZA4rYzL._AC_SY580_.jpg" alt="img">
+                            <img src="https://image.cnbcfm.com/api/v1/image/106539910-1589577114154-Predator_Thronos_Air_01_recommended.jpg?v=1589577146" alt="img">
                         </div>
 
                         <div class="product-icons">
@@ -659,14 +660,14 @@ font-size: 21px;
                         </div>
 
                         <div class="product-description">
-                            <p class="product-name">Drone</p>
+                            <p class="product-name">Predator "Thronos"</p>
                             <p class="price">
                                 <strong>Price:</strong>
                                 <del>
-                                    <span class="f-product-price">₱49,490</span>
+                                    <span class="f-product-price">₱1,29,490</span>
                                 </del>
                                 <ins>
-                                    <span class="f-cur-price">Now ₱47,999</span>
+                                    <span class="f-cur-price"><br>Now ₱1,11,999</span>
                                 </ins>
                                 <span class="f-product-unit"></span>
                             </p>
@@ -694,7 +695,7 @@ font-size: 21px;
                                     <span class="f-product-price">₱4,650</span>
                                 </del>
                                 <ins>
-                                    <span class="f-cur-price">Now ₱4,000</span>
+                                    <span class="f-cur-price"><br>Now ₱4,000</span>
                                 </ins>
                                 <span class="f-product-unit"></span>
                             </p>
@@ -721,7 +722,7 @@ font-size: 21px;
                                     <span class="f-product-price">1,499</span>
                                 </del>
                                 <ins>
-                                    <span class="f-cur-price">Now 899</span>
+                                    <span class="f-cur-price"><br>Now 899</span>
                                 </ins>
                                 <span class="f-product-unit"></span>
                             </p>
@@ -749,7 +750,7 @@ font-size: 21px;
                                     <span class="f-product-price">₱999</span>
                                 </del>
                                 <ins>
-                                    <span class="f-cur-price">Now ₱999</span>
+                                    <span class="f-cur-price"><br>Now ₱999</span>
                                 </ins>
                                 <span class="f-product-unit"></span>
                             </p>
@@ -777,7 +778,7 @@ font-size: 21px;
                                     <span class="f-product-price">₱55,990</span>
                                 </del>
                                 <ins>
-                                    <span class="f-cur-price">Now ₱50,999</span>
+                                    <span class="f-cur-price"><br>Now ₱50,999</span>
                                 </ins>
                                 <span class="f-product-unit"></span>
                             </p>
@@ -805,7 +806,7 @@ font-size: 21px;
                                     <span class="f-product-price">₱63,995</span>
                                 </del>
                                 <ins>
-                                    <span class="f-cur-price">Now ₱60,999</span>
+                                    <span class="f-cur-price"><br>Now ₱60,999</span>
                                 </ins>
                                 <span class="f-product-unit"></span>
                             </p>
@@ -833,7 +834,7 @@ font-size: 21px;
                                     <span class="f-product-price">₱22,049</span>
                                 </del>
                                 <ins>
-                                    <span class="f-cur-price">Now ₱20,999</span>
+                                    <span class="f-cur-price"><br>Now ₱20,999</span>
                                 </ins>
                                 <span class="f-product-unit"></span>
                             </p>
@@ -861,7 +862,7 @@ font-size: 21px;
                                     <span class="f-product-price">₱28,000</span>
                                 </del>
                                 <ins>
-                                    <span class="f-cur-price">Now ₱25,999</span>
+                                    <span class="f-cur-price"><br>Now ₱25,999</span>
                                 </ins>
                                 <span class="f-product-unit"></span>
                             </p>
@@ -889,7 +890,7 @@ font-size: 21px;
                                     <span class="f-product-price">₱109,990.00</span>Php
                                 </del>
                                 <ins>
-                                    <span class="f-cur-price">Now ₱100,000.00
+                                    <span class="f-cur-price"><br>Now ₱100,000.00
                                         </span>
                                 </ins>
                                 <span class="f-product-unit"></span>
@@ -917,7 +918,7 @@ font-size: 21px;
                                     <span class="f-product-price">₱52,990</span>
                                 </del>
                                 <ins>
-                                    <span class="f-cur-price">Now ₱51,000</span>
+                                    <span class="f-cur-price"><br>Now ₱51,000</span>
                                 </ins>
                                 <span class="f-product-unit"></span>
                             </p>
@@ -946,7 +947,7 @@ font-size: 21px;
                                             <span class="f-product-price">₱8,490</span>
                                         </del>
                                         <ins>
-                                            <span class="f-cur-price">Now ₱8,000</span>
+                                            <span class="f-cur-price"><br>Now ₱8,000</span>
                                         </ins>
                                         <span class="f-product-unit"></span>
                                     </p>
@@ -974,7 +975,7 @@ font-size: 21px;
                                                     <span class="f-product-price">₱8,390</span>
                                                 </del>
                                                 <ins>
-                                                    <span class="f-cur-price">Now ₱7,000</span>
+                                                    <span class="f-cur-price"><br>Now ₱7,000</span>
                                                 </ins>
                                                 <span class="f-product-unit"></span>
                                             </p>
@@ -1002,7 +1003,7 @@ font-size: 21px;
                                                             <span class="f-product-price">₱38,990</span>
                                                         </del>
                                                         <ins>
-                                                            <span class="f-cur-price">Now ₱37,200</span>
+                                                            <span class="f-cur-price"><br>Now ₱37,200</span>
                                                         </ins>
                                                         <span class="f-product-unit"></span>
                                                     </p>
@@ -1021,7 +1022,7 @@ font-size: 21px;
                                                             <div class="add-to-favorite"><span class="icon-heart"></span></div>
                                                             <p><span class="discount">2</span>% off</p>
                                                         </div>
-                                
+                                                            
                                                         <div class="product-description">
                                                             <p class="product-name">Drone</p>
                                                             <p class="price">
@@ -1030,7 +1031,7 @@ font-size: 21px;
                                                                     <span class="f-product-price">₱18,990</span>
                                                                 </del>
                                                                 <ins>
-                                                                    <span class="f-cur-price">Now ₱17,520</span>
+                                                                    <span class="f-cur-price"><br>Now ₱17,520</span>
                                                                 </ins>
                                                                 <span class="f-product-unit"></span>
                                                             </p>
