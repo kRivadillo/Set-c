@@ -1,0 +1,1052 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    font-family: Franklin Gothic Medium;
+}
+
+p {
+    color: #00ff15;
+}
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    position: relative;
+    background-color: #111;
+    overflow: scroll;
+          overflow-x: hidden;
+        
+        }
+
+
+        ::-webkit-scrollbar {
+        width: 0px; 
+}
+
+
+.home {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+nav {
+    position: absolute;
+    display: flex;
+    height: 3.6rem;
+    width: 2000px;
+    padding: 2px;
+    align-items: center;
+    background: rgba(14, 14, 14, 0.61);
+    border-bottom: 2px solid rgb(0, 255, 21);
+    border-radius: 0.1rem;
+    z-index: 999;
+}
+
+nav.active {
+    position: fixed;
+    top: 0;
+    height: 4rem;
+    width: 100%;
+    border-radius: 0;
+}
+
+nav.active .search-box {
+    width: 24rem;
+}
+
+nav .logo {
+    margin-left: 3rem;
+}
+
+nav.active .logo {
+    margin-left: 4rem;
+}
+
+nav .logo a {
+    color: #267226;
+    font-size: 2rem;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+nav .nav-items {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    list-style: none;
+}
+
+.nav-items li {
+    margin-right: 2rem;
+}
+
+.nav-items li a {
+    color: #00ff2a;
+    font-size: 1.2rem;
+    font-weight: 500;
+    text-decoration: none;
+    -webkit-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+
+.nav-items li a:hover {
+    color: rgb(255, 51, 0);
+}
+
+.search-box {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    height: 2.2rem;
+    width: 18rem;
+    -webkit-transition: all 0.4s ease;
+    -o-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+}
+
+.search-box .search-icon {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    height: 100%;
+    width: 15%;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    background: #00ff00ef;
+    border-radius: 0.1rem 0 0 0.1rem;
+}
+
+.search-box .search-icon span {
+    color: rgba(31, 31, 31, 0.493);
+    font-size: 1.2rem;
+}
+
+.search-box input {
+    padding-left: 0.8rem;
+    height: 100%;
+    width: 80%;
+    border: none;
+    outline: none;
+    color: #2e2e3f;
+    font-size: 1rem;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    border-radius: 0 0.1rem 0.1rem 0;
+}
+
+nav .icon-links {
+    margin-right: 2.8rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+
+#hero {
+    position: absolute;
+    top: 50%;
+    left: 5%;
+    -webkit-transform: translate(5%, -50%);
+    -ms-transform: translate(5%, -50%);
+    transform: translate(5%, -50%);
+    width: 45%;
+    color: #fff;
+    z-index: 9;
+}
+
+#hero h1 {
+    font-size: 3.4rem;
+    text-shadow: 0 0 0.6rem #111;
+}
+
+#hero p {
+    font-size: 1.2rem;
+    width: 100%;
+    text-shadow: 0 0 0.6rem #111;
+}
+#hero .button {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-top: 1.8rem;
+}
+
+#hero .button .btn {
+    margin-right: 1.2rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 9rem;
+    height: 3.6rem;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    background-color: #00ff15;
+    border-radius: 1px;
+    -webkit-box-shadow: 0 0 0.6rem rgb(64, 255, 16);
+    box-shadow: 0 0 0.6rem rgb(21, 255, 0);
+}
+
+#hero .button a {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    color: rgb(0, 0, 0);
+    font-size: 1.2rem;
+    text-decoration: none;
+    font-family: Franklin Gothic Medium;
+}
+
+.top-products {
+    width: 100%;
+}
+
+.products {
+    margin-top: 1rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    width: 100%;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+}
+
+.products .incel {
+    margin: 0.4rem;
+    position: relative;
+    -ms-flex-preferred-size: 330px;
+    flex-basis: 330px;
+    -webkit-box-flex: 1;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+    height: 240px;
+    border-radius: 0.1rem;
+}
+
+.products .incel.one {
+    background-image: url("https://www.apple.com/v/ipad-pro/al/images/overview/hero/hero_combo__fcqcc3hbzjyy_large.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.products .incel.mango {
+    background-image: url("https://i.ebayimg.com/images/g/Yc4AAOSwx9ZawmaT/s-l1600.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.products .incel.peach {
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTt9DkYX5QQ-PUI0mrkHA5FG0UBAhzxUWSujw&usqp=CAU");
+    background-size: cover;
+    background-position: center;
+}
+
+.products .incel.strawberry {
+    background-image: url("https://www.apple.com/v/iphone-14-pro/c/images/meta/iphone-14-pro_overview__e414c54gtu6a_og.png");
+    background-size: cover;
+    background-position: center;
+}
+.products .incel .incel-text {
+    padding: 1rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.products .incel .incel-text h2 {
+    color: rgb(145, 250, 9);
+    font-size: 1.8rem;
+    font-weight: bold;
+    text-shadow: 0 0 0.2rem #444;
+}
+
+.products .incel .incel-text span {
+    color: rgb(255, 255, 255);
+    font-size: 2.8rem;
+    font-weight: bold;
+    text-shadow: 0 0 0.2rem #444;
+}
+
+.products .incel .incel-text p {
+    color: #fff;
+    font-size: 1.8rem;
+    text-shadow: 0 0 0.2rem #444;
+}
+
+.featured-product-section {
+    padding-bottom: 2rem;
+}
+
+.featured-product-wrap {
+    padding-top: 3.6rem;
+    padding: 90px;
+}
+
+.featured-products {
+    padding-top: 1rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    width: 100%;
+    height: auto;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+
+}
+
+.product-wrap {
+    margin: 0 0.7rem 2rem 0.6rem;
+    position: relative;
+    height: 360px;
+    width: 260px;
+    background: rgba(31, 30, 30, 0.397);
+    border-radius: 0.2rem;
+    -webkit-transition: all 0.4s ease;
+    -o-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+   
+   
+}
+
+.product-wrap:hover {
+    -webkit-box-shadow: 0.6rem 0.6rem 1rem rgb(24, 225, 0);
+    box-shadow: 0.6rem 0.6rem 1rem rgb(30, 255, 0);
+}
+
+.product-wrap .product-img {
+    position: relative;
+    width: 100%;
+    height: 55%;
+    border-radius: 0.2rem 0.2rem 0.6rem 0.6rem;
+}
+
+.product-wrap .product-img::before {
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+  
+    border-radius: 0.2rem 0.2rem 0.8rem 0.8rem;
+}
+
+.product-wrap .product-img img {
+    height: 100%;
+    width: 100%;
+    -o-object-fit: cover;
+    object-fit: cover;
+    border-radius: 0.2rem 0.2rem 0.8rem 0.8rem;
+}
+
+.product-wrap .product-icons {
+    position: absolute;
+    color: #48ff00;
+    top: 0;
+    left: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+}
+
+.product-description .price {
+    margin-top: 0.6rem;
+    text-align: center;
+    color: #dae6d5;
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.product-description .price .f-product-unit {
+    display: none;
+}
+
+ .add-to-cart-btn {
+    margin-top:12px;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.product-description .add-to-cart-btn p {
+    color: rgb(0, 0, 0);
+    font-size: 1rem;
+    font-family: Franklin Gothic Medium;
+    text-align: center;
+    text-decoration: none;
+    padding: 0.6rem 0.8rem;
+    border-radius: 0.2rem;
+    background: #67ff20;
+}
+
+.product-name {
+text-align: center;
+padding: 12px;
+font-size: 21px;
+
+}
+
+.icon-cart-plus {
+    margin: auto;
+}
+
+
+</style>
+    <title>Activity c</title>
+</head>
+
+<body>
+    <div class="home">
+        <nav class="navbar">
+            <div class="logo">
+                <a href="https://www.merriam-webster.com/dictionary/emporium">  Tech Emporium | </Incel></a>
+            </div>
+<br>
+            <ul class="nav-items">
+                <li><a href="#top">Home</a></li>
+                <li><a href="#products">Products</a></li>
+               
+            </ul>
+
+            <div class="search-box">
+                <div class="search-icon">
+                    <span class="icon-search"></span>
+                </div>
+                <input type="text" placeholder="Search...">
+            </div>
+        </nav>
+
+        <!-- hero yessir -->
+        <div id="hero">
+            <h1 style="font-size: 114px; font-family: 'Franklin Gothic Medium';">Tech Emporium</h1>
+            <p style="font-size: 24px; font-family: 'Franklin Gothic Medium';">A Shop For Every Gamers.</p>
+            <div class="button">
+                <div class="btn">
+                    <a href="#products">Explore</a>
+                </div>
+                <div class="btn">
+                    <a href="#product-description">Shop Now</a>
+                </div>
+            </div>
+        </div>
+    </div>
+   
+    <!-- top products /best seller -->
+    <div class="top-products">
+        <div class="section-wrap">
+            <div class="sub-section-title">
+                <h2 style="color: rgb(255, 255, 255); padding: 22px; font-size: 43px; color: #00ff15c2;">Top products</h2>
+             
+            </div>
+
+            <div class="products">
+                <div class="incel one">
+                    <div class="incel-text">
+                        <h2>Ipad Pro</h2>
+                        <span>10,000+</span>
+                        <p>Sales</p>
+                    </div>
+                </div>
+
+                <div class="incel mango">
+                    <div class="incel-text">
+                        <h2>Nokia 3310</h2>
+                        <span>9000+</span>
+                        <p>Sales</p>
+                    </div>
+                </div>
+
+                <div class="incel peach">
+                    <div class="incel-text">
+                        <h2>PS5</h2>
+                        <span>2220+</span>
+                        <p>Sales</p>
+                    </div>
+                </div>
+
+                <div class="incel strawberry">
+                    <div class="incel-text">
+                        <h2>Iphone 14 pro</h2>
+                        <span>1000+</span>
+                        <p>Sales</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- featured products aaa  -->
+    <div class="featured-product-section" id="products">
+        <div class="section-wrap">
+            
+            <div class="featured-product-wrap incels">
+                <div class="sub-section-title">
+                    <h2 style="color: rgb(255, 255, 255);">Featured products</h2>
+                    
+                </div>
+
+                <div class="featured-products">
+                    <div class="product-wrap one">
+                        <div class="product-img">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQi-1CmoY4DIjLlnb0mxhG-YRwBP6enO-UNcg&usqp=CAU" alt="one_img">
+                        </div>
+
+                        <div class="product-icons">
+                            <div class="add-to-favorite"><span class="icon-heart"></span></div>
+                            <p><span class="discount">13</span>% off</p>
+                        </div>
+
+                        <div class="product-description">
+                            <p class="product-name">Acer Predator xb253q </p>
+                            <p class="price">
+                                <strong>Price:</strong>
+                                <del>
+                                    <span class="f-product-price">₱18,899</span>
+                                </del>
+                                <ins>
+                                    <span class="f-cur-price">Now ₱15,999</span>
+                                </ins>
+                                <span class="f-product-unit"></span>
+                            </p>
+                            <div class="add-to-cart-btn">
+                                      <p><span class="icon-cart-plus"></span><a href="#">Add to Cart</a></p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="product-wrap balls">
+                        <div class="product-img">
+                            <img src="https://www.notebookcheck.net/fileadmin/Notebooks/Xiaomi/Black_Shark_31/4_zu_3_blackshark3.jpg" alt="img">
+                        </div>
+
+                        <div class="product-icons">
+                            <div class="add-to-favorite"><span class="icon-heart"></span></div>
+                            <p><span class="discount">5</span>% off</p>
+                        </div>
+
+                        <div class="product-description">
+                            <p class="product-name">Black Shark 3</p>
+                            <p class="price">
+                                <strong>Price:</strong>
+                                <del>
+                                    <span class="f-product-price">₱25,599</span>
+                                </del>
+                                <ins>
+                                    <span class="f-cur-price">Now ₱25,000</span>
+                                </ins>
+                                <span class="f-product-unit"></span>
+                            </p>
+                            <div class="add-to-cart-btn">
+                                      <p><span class="icon-cart-plus"></span><a href="#">Add to Cart</a></p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="product-wrap CPU">
+                        <div class="product-img">
+                            <img src="https://images.squarespace-cdn.com/content/v1/5e8d4b39f7e29976a0ed859a/1627066385009-6QB3XJGBPEFPN9SRTN2F/custom-built-gaming-pc-rig.png?format=1000w" alt="img">
+                        </div>
+
+                        <div class="product-icons">
+                            <div class="add-to-favorite"><span class="icon-heart"></span></div>
+                            <p><span class="discount">1</span>% off</p>
+                        </div>
+                        <div class="product-description">
+                            <p class="product-name">Pinlles Computer</p>
+                            <p class="price">
+                                <strong>Price:</strong>
+                                <del>
+                                    <span class="f-product-price">₱30,999</span>
+                                </del>
+                                <ins>
+                                    <span class="f-cur-price">Now ₱30,000</span>
+                                </ins>
+                                <span class="f-product-unit"></span>
+                            </p>
+                            <div class="add-to-cart-btn">
+                                      <p><span class="icon-cart-plus"></span><a href="#">Add to Cart</a></p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="product-wrap Razer, Gaming Headset">
+                        <div class="product-img">
+                            <img src="https://www.cnet.com/a/img/resize/ebd7f05d09577a119abc41a2131098f7426f93bb/hub/2020/11/01/06bc7f0d-83ec-488a-a341-d08cd32f02b5/razer-kaira-and-kaira-pro-09557.jpg?auto=webp&fit=crop&height=236&width=420" alt="">
+                        </div>
+
+                        <div class="product-icons">
+                            <div class="add-to-favorite"><span class="icon-heart"></span></div>
+                            <p><span class="discount">13</span>% off</p>
+                        </div>
+
+                        <div class="product-description">
+                            <p class="product-name">Razer, Gaming Headset</p>
+                            <p class="price">
+                                <strong>Price:</strong>
+                                <del>
+                                    <span class="f-product-price">₱ 17,780</span>
+                                </del>
+                                <ins>
+                                    <span class="f-cur-price">Now ₱ 16,000</span>
+                                </ins>
+                                <span class="f-product-unit"></span>
+                                </ins>
+                                
+                            </p>
+                            <div class="add-to-cart-btn">
+                                      <p><span class="icon-cart-plus"></span><a href="#">Add to Cart</a></p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="product-wrap Gusion Venom T-Shirt">
+                        <div class="product-img">
+                            <img src="https://m.media-amazon.com/images/I/41+XZA4rYzL._AC_SY580_.jpg" alt="img">
+                        </div>
+
+                        <div class="product-icons">
+                            <div class="add-to-favorite"><span class="icon-heart"></span></div>
+                            <p><span class="discount">4</span>% off</p>
+                        </div>
+
+                        <div class="product-description">
+                            <p class="product-name">Drone</p>
+                            <p class="price">
+                                <strong>Price:</strong>
+                                <del>
+                                    <span class="f-product-price">₱49,490</span>
+                                </del>
+                                <ins>
+                                    <span class="f-cur-price">Now ₱47,999</span>
+                                </ins>
+                                <span class="f-product-unit"></span>
+                            </p>
+                            <div class="add-to-cart-btn">
+                                      <p><span class="icon-cart-plus"></span><a href="#">Add to Cart</a></p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="product-wrap aut">
+                        <div class="product-img">
+                            <img src="https://www.hardwaretimes.com/wp-content/uploads/2020/01/Best-Gaming-Keyboards-Under-50.jpg" alt="">
+                        </div>
+
+                        <div class="product-icons">
+                            <div class="add-to-favorite"><span class="icon-heart"></span></div>
+                            <p><span class="discount">2</span>% off</p>
+                        </div>
+
+                        <div class="product-description">
+                            <p class="product-name">Razer, Gaming Keyboard </p>
+                            <p class="price">
+                                <strong>Price:</strong>
+                                <del>
+                                    <span class="f-product-price">₱4,650</span>
+                                </del>
+                                <ins>
+                                    <span class="f-cur-price">Now ₱4,000</span>
+                                </ins>
+                                <span class="f-product-unit"></span>
+                            </p>
+                            <div class="add-to-cart-btn">
+                                      <p><span class="icon-cart-plus"></span><a href="#">Add to Cart</a></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-wrap Nokia 3310">
+                        <div class="product-img">
+                            <img src="https://i.ebayimg.com/images/g/Yc4AAOSwx9ZawmaT/s-l1600.jpg" alt="">
+                        </div>
+
+                        <div class="product-icons">
+                            <div class="add-to-favorite"><span class="icon-heart"></span></div>
+                            <p><span class="discount">12</span>% off</p>
+                        </div>
+
+                        <div class="product-description">
+                            <p class="product-name">Nokia 3310</p>
+                            <p class="price">
+                                <strong>Price:</strong>
+                                <del>
+                                    <span class="f-product-price">1,499</span>
+                                </del>
+                                <ins>
+                                    <span class="f-cur-price">Now 899</span>
+                                </ins>
+                                <span class="f-product-unit"></span>
+                            </p>
+                            <div class="add-to-cart-btn">
+                                      <p><span class="icon-cart-plus"></span><a href="#">Add to Cart</a></p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="product-wrap Cristiano Ronaldo">
+                        <div class="product-img">
+                            <img src="https://m.media-amazon.com/images/I/51MEhAfu61S._AC_.jpg" alt="img">
+                        </div>
+
+                        <div class="product-icons">
+                            <div class="add-to-favorite"><span class="icon-heart"></span></div>
+                            <p><span class="discount">0</span>% off</p>
+                        </div>
+
+                        <div class="product-description">
+                            <p class="product-name">Gaming Mouse Pad</p>
+                            <p class="price">
+                                <strong>Price:</strong>
+                                <del>
+                                    <span class="f-product-price">₱999</span>
+                                </del>
+                                <ins>
+                                    <span class="f-cur-price">Now ₱999</span>
+                                </ins>
+                                <span class="f-product-unit"></span>
+                            </p>
+                            <div class="add-to-cart-btn">
+                                      <p><span class="icon-cart-plus"></span><a href="#">Add to Cart</a></p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="product-wrap yo mama">
+                        <div class="product-img">
+                            <img src="https://www.apple.com/v/ipad-pro/al/images/overview/hero/hero_combo__fcqcc3hbzjyy_large.jpg" alt="img">
+                        </div>
+
+                        <div class="product-icons">
+                            <div class="add-to-favorite"><span class="icon-heart"></span></div>
+                            <p><span class="discount">11</span>% off</p>
+                        </div>
+
+                        <div class="product-description">
+                            <p class="product-name">Ipad Pro</p>
+                            <p class="price">
+                                <strong>Price:</strong>
+                                <del>
+                                    <span class="f-product-price">₱55,990</span>
+                                </del>
+                                <ins>
+                                    <span class="f-cur-price">Now ₱50,999</span>
+                                </ins>
+                                <span class="f-product-unit"></span>
+                            </p>
+                            <div class="add-to-cart-btn">
+                                <p><span class="icon-cart-plus"></span><a href="#">Add to Cart</a></p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="product-wrap natoy x jovit bl">
+                        <div class="product-img">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTid2KrvQCv8QM_ZDKiCIf3NCepGkOXE3XQQA&usqp=CAU" alt="img">
+                        </div>
+
+                        <div class="product-icons">
+                            <div class="add-to-favorite"><span class="icon-heart"></span></div>
+                            <p><span class="discount">2</span>% off</p>
+                        </div>
+
+                        <div class="product-description">
+                            <p class="product-name">Asus Zenbook S 13 OLED</p>
+                            <p class="price">
+                                <strong>Price:</strong>
+                                <del>
+                                    <span class="f-product-price">₱63,995</span>
+                                </del>
+                                <ins>
+                                    <span class="f-cur-price">Now ₱60,999</span>
+                                </ins>
+                                <span class="f-product-unit"></span>
+                            </p>
+                            <div class="add-to-cart-btn">
+                                      <p><span class="icon-cart-plus"></span><a href="#">Add to Cart</a></p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="product-wrap dorimoun">
+                        <div class="product-img">
+                            <img src="https://www.cnet.com/a/img/resize/7360308094027b3811f8c9a47a7dc6be1e7756ae/hub/2022/10/10/437e93c0-962a-4a6e-8ea0-7bffa411a67b/meta-quest-2-vr-virtual-reality-7426.jpg?auto=webp&fit=crop&height=900&width=1200" alt="img">
+                        </div>
+
+                        <div class="product-icons">
+                            <div class="add-to-favorite"><span class="icon-heart"></span></div>
+                            <p><span class="discount">2</span>% off</p>
+                        </div>
+
+                        <div class="product-description">
+                            <p class="product-name">VR</p>
+                            <p class="price">
+                                <strong>Price:</strong>
+                                <del>
+                                    <span class="f-product-price">₱22,049</span>
+                                </del>
+                                <ins>
+                                    <span class="f-cur-price">Now ₱20,999</span>
+                                </ins>
+                                <span class="f-product-unit"></span>
+                            </p>
+                            <div class="add-to-cart-btn">
+                                      <p><span class="icon-cart-plus"></span><a href="#">Add to Cart</a></p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="product-wrap blue chicknaaaaa">
+                        <div class="product-img">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTt9DkYX5QQ-PUI0mrkHA5FG0UBAhzxUWSujw&usqp=CAU" alt="img">
+                        </div>
+
+                        <div class="product-icons">
+                            <div class="add-to-favorite"><span class="icon-heart"></span></div>
+                            <p><span class="discount">2</span>% off</p>
+                        </div>
+
+                        <div class="product-description">
+                            <p class="product-name">Ps5</p>
+                            <p class="price">
+                                <strong>Price:</strong>
+                                <del>
+                                    <span class="f-product-price">₱28,000</span>
+                                </del>
+                                <ins>
+                                    <span class="f-cur-price">Now ₱25,999</span>
+                                </ins>
+                                <span class="f-product-unit"></span>
+                            </p>
+                            <div class="add-to-cart-btn">
+                                      <p><span class="icon-cart-plus"></span><a href="#">Add to Cart</a></p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="product-wrap">
+                        <div class="product-img">
+                            <img src="https://fr.shopping.rakuten.com/photo/1995919867_ML.jpg?fbclid=IwAR13Nq8clwcwEg0b9LMYCd7wymqb3OFVVmbu_ZoX9GzUy_OhiWvBHEjDFpM" alt="img">
+                        </div>
+
+                        <div class="product-icons">
+                            <div class="add-to-favorite"><span class="icon-heart"></span></div>
+                            <p><span class="discount">3</span>% off</p>
+                        </div>
+
+                        <div class="product-description">
+                            <p class="product-name">iPhone 14 Pro Max 1TB</p>
+                            <p class="price">
+                                <strong>Price:</strong>
+                                <del>
+                                    <span class="f-product-price">₱109,990.00</span>Php
+                                </del>
+                                <ins>
+                                    <span class="f-cur-price">Now ₱100,000.00
+                                        </span>
+                                </ins>
+                                <span class="f-product-unit"></span>
+                            </p>
+                            <div class="add-to-cart-btn">
+                                      <p><span class="icon-cart-plus"></span><a href="#">Add to Cart</a></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-wrap">
+                        <div class="product-img">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTBvRAi38RVq6sLHggsMDUoBhnsjTTSlHmCqQ&usqp=CAU" alt="img">
+                        </div>
+
+                        <div class="product-icons">
+                            <div class="add-to-favorite"><span class="icon-heart"></span></div>
+                            <p><span class="discount">2</span>% off</p>
+                        </div>
+
+                        <div class="product-description">
+                            <p class="product-name">Apple Watch</p>
+                            <p class="price">
+                                <strong>Price:</strong>
+                                <del>
+                                    <span class="f-product-price">₱52,990</span>
+                                </del>
+                                <ins>
+                                    <span class="f-cur-price">Now ₱51,000</span>
+                                </ins>
+                                <span class="f-product-unit"></span>
+                            </p>
+                            <div class="add-to-cart-btn">
+                                      <p><span class="icon-cart-plus"></span><a href="#">Add to Cart</a></p>
+
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product-wrap">
+                                <div class="product-img">
+                                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRQLhbwUmlZa_kizPhhg8hfsHjgyBN_3BACqQ&usqp=CAU" alt="img">
+                                </div>
+        
+                                <div class="product-icons">
+                                    <div class="add-to-favorite"><span class="icon-heart"></span></div>
+                                    <p><span class="discount">2</span>% off</p>
+                                </div>
+        
+                                <div class="product-description">
+                                    <p class="product-name">Apple Air Pods</p>
+                                    <p class="price">
+                                        <strong>Price:</strong>
+                                        <del>
+                                            <span class="f-product-price">₱8,490</span>
+                                        </del>
+                                        <ins>
+                                            <span class="f-cur-price">Now ₱8,000</span>
+                                        </ins>
+                                        <span class="f-product-unit"></span>
+                                    </p>
+                                    <div class="add-to-cart-btn">
+                                              <p><span class="icon-cart-plus"></span><a href="#">Add to Cart</a></p>
+        
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="product-wrap">
+                                        <div class="product-img">
+                                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSU-0x6DM-wy9BobLOH271HRKx9-OOtyakYPg&usqp=CAU" alt="img">
+                                        </div>
+                
+                                        <div class="product-icons">
+                                            <div class="add-to-favorite"><span class="icon-heart"></span></div>
+                                            <p><span class="discount">2</span>% off</p>
+                                        </div>
+                
+                                        <div class="product-description">
+                                            <p class="product-name">Power Bank</p>
+                                            <p class="price">
+                                                <strong>Price:</strong>
+                                                <del>
+                                                    <span class="f-product-price">₱8,390</span>
+                                                </del>
+                                                <ins>
+                                                    <span class="f-cur-price">Now ₱7,000</span>
+                                                </ins>
+                                                <span class="f-product-unit"></span>
+                                            </p>
+                                            <div class="add-to-cart-btn">
+                                                      <p><span class="icon-cart-plus"></span><a href="#">Add to Cart</a></p>
+                
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="product-wrap">
+                                                <div class="product-img">
+                                                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRwGOJ98TFAyou63cpB1Oc9ggf-xc4GTWVNig&usqp=CAU" alt="img">
+                                                </div>
+                        
+                                                <div class="product-icons">
+                                                    <div class="add-to-favorite"><span class="icon-heart"></span></div>
+                                                    <p><span class="discount">2</span>% off</p>
+                                                </div>
+                        
+                                                <div class="product-description">
+                                                    <p class="product-name">Nintendo Switch</p>
+                                                    <p class="price">
+                                                        <strong>Price:</strong>
+                                                        <del>
+                                                            <span class="f-product-price">₱38,990</span>
+                                                        </del>
+                                                        <ins>
+                                                            <span class="f-cur-price">Now ₱37,200</span>
+                                                        </ins>
+                                                        <span class="f-product-unit"></span>
+                                                    </p>
+                                                    <div class="add-to-cart-btn">
+                                                              <p><span class="icon-cart-plus"></span><a href="#">Add to Cart</a></p>
+                        
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="product-wrap">
+                                                        <div class="product-img">
+                                                            <img src=" https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRt7msiZuUx_QG__8tuXk24rsFANA1mSo5t3g&usqp=CAU" alt="img">
+                                                        </div>
+                                
+                                                        <div class="product-icons">
+                                                            <div class="add-to-favorite"><span class="icon-heart"></span></div>
+                                                            <p><span class="discount">2</span>% off</p>
+                                                        </div>
+                                
+                                                        <div class="product-description">
+                                                            <p class="product-name">Drone</p>
+                                                            <p class="price">
+                                                                <strong>Price:</strong>
+                                                                <del>
+                                                                    <span class="f-product-price">₱18,990</span>
+                                                                </del>
+                                                                <ins>
+                                                                    <span class="f-cur-price">Now ₱17,520</span>
+                                                                </ins>
+                                                                <span class="f-product-unit"></span>
+                                                            </p>
+                                                            <div class="add-to-cart-btn">
+                                                                      <p><span class="icon-cart-plus"></span><a href="#">Add to Cart</a></p>
+                                
+                                                                                   
+                                      
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+  
+</body>
+<footer><p style="text-align: center; padding: 20px; font-size: 15px;">@Webpage by Group INCEL |</p></footer>
+</html>
