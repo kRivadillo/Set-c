@@ -1,0 +1,140 @@
+
+
+<style>
+    .product-wrap {
+        position: relative;
+        height: 360px;
+        width: 260px;
+        background: rgba(31, 30, 30, 0.397);
+        border-radius: 0.2rem;
+        -webkit-transition: all 0.4s ease;
+        -o-transition: all 0.4s ease;
+        transition: all 0.4s ease;
+    }
+    
+    .product-wrap:hover {
+        -webkit-box-shadow: 0.6rem 0.6rem 1rem rgb(24, 225, 0);
+        box-shadow: 0.6rem 0.6rem 1rem rgb(30, 255, 0);
+    }
+    
+    .product-wrap .product-img {
+        position: relative;
+        width: 100%;
+        height: 55%;
+        border-radius: 0.2rem 0.2rem 0.6rem 0.6rem;
+    }
+    
+    .product-wrap .product-img::before {
+        position: absolute;
+        content: '';
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+    }
+    
+    .product-wrap .product-img img {
+        height: 100%;
+        width: 100%;
+        -o-object-fit: cover;
+        object-fit: cover;
+        border-radius: 0.2rem 0.2rem 0.8rem 0.8rem;
+    }
+    
+    .product-wrap .product-icons {
+        position: absolute;
+        color: #48ff00;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        width: 100%;
+        -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+        justify-content: space-between;
+    }
+    
+    .product-description .price {
+        margin-top: 0.6rem;
+        text-align: center;
+        color: #000000;
+        font-size: 24px;
+        font-weight: 600;
+    }
+    
+    .product-description .price .f-product-unit {
+        display: none;
+    }
+    
+     .add-to-cart-btn {
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        cursor: pointer;
+        text-decoration:none;
+    }
+    
+    .product-description .add-to-cart-btn p {
+        color: rgb(0, 0, 0);
+        font-size: 1rem;
+        font-family: Franklin Gothic Medium;
+        text-align: center;
+        text-decoration: none;
+        padding: 0.6rem 0.8rem;
+        background: #67ff20;
+    }
+    
+    .product-name {
+    text-align: center;
+    padding: 12px;
+    font-size: 21px;
+    }
+
+    .icon-cart-plus {
+      margin: auto;
+    }
+    
+    p {
+        font-size: 40px;
+        color: rgb(0, 0, 0);
+        font-weight: 200;
+    }
+    
+img {
+    max-width: 800px;
+    max-height: 800px;
+}
+
+    </style>
+
+
+<center>
+    
+    <div class="product-img">
+        <img src="https://www.hardwaretimes.com/wp-content/uploads/2020/01/Best-Gaming-Keyboards-Under-50.jpg" alt="img">
+    </dv>
+
+    <div class="product-icons">
+        <div class="add-to-favorite"><span class="icon-heart"></span></div>
+        <p><span class="discount">2</span>% off</p>
+    </div>
+
+    <div class="product-description">
+        <p class="product-name">Razer, Gaming Keyboard </p>
+        <p class="price">
+            <strong>Price:</strong>
+            <del>
+                <span class="f-product-price">₱4,650</span>
+            </del>
+            <ins>
+                <span class="f-cur-price"><br>Now ₱4,000</span>
+            </ins>
+            <span class="f-product-unit"></span>
+        </p>
+        <div class="add-to-cart-btn">
+                  <p><span class="icon-cart-plus"></span><a href="#">Buy Now</a></p>
+        </div>
+    </div>
+</div></center>
