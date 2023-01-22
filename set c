@@ -1,12 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
-
-<head>
+    <html lang="en">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<style>
+    <style>
 
 * {
     margin: 0;
@@ -27,15 +25,11 @@ body {
     position: relative;
     background-color: #111;
     overflow: scroll;
-          overflow-x: hidden;
-        
-        }
-
-
-        ::-webkit-scrollbar {
-        width: 0px; 
+    overflow-x: hidden;
+    }
+::-webkit-scrollbar {
+    width: 0px; 
 }
-
 
 .home {
     position: relative;
@@ -441,10 +435,11 @@ font-size: 21px;
     margin: auto;
 }
 
-
 </style>
+<head>
     <title>Activity c</title>
 </head>
+
 
 <body>
     <div class="home">
@@ -543,7 +538,7 @@ font-size: 21px;
 
                         <div class="product-icons">
                             <div class="add-to-favorite"><span class="icon-heart"></span></div>
-                            <p><span class="discount">13</span>% off</p>
+                            
                         </div>
 
                         <div class="product-description">
@@ -571,7 +566,7 @@ font-size: 21px;
 
                         <div class="product-icons">
                             <div class="add-to-favorite"><span class="icon-heart"></span></div>
-                            <p><span class="discount">5</span>% off</p>
+                           
                         </div>
 
                         <div class="product-description">
@@ -594,15 +589,15 @@ font-size: 21px;
 
                     <div class="product-wrap CPU">
                         <div class="product-img">
-                            <img src="https://images.squarespace-cdn.com/content/v1/5e8d4b39f7e29976a0ed859a/1627066385009-6QB3XJGBPEFPN9SRTN2F/custom-built-gaming-pc-rig.png?format=1000w" alt="img">
+                            <img src="https://i.ytimg.com/vi/cl8T-q9xbM0/maxresdefault.jpg" alt="img">
                         </div>
 
                         <div class="product-icons">
                             <div class="add-to-favorite"><span class="icon-heart"></span></div>
-                            <p><span class="discount">1</span>% off</p>
+                           
                         </div>
                         <div class="product-description">
-                            <p class="product-name">Pinlles Computer</p>
+                            <p class="product-name">CyberPunk Keyboard</p>
                             <p class="price">
                                 <strong>Price:</strong>
                                 <del>
@@ -626,7 +621,7 @@ font-size: 21px;
 
                         <div class="product-icons">
                             <div class="add-to-favorite"><span class="icon-heart"></span></div>
-                            <p><span class="discount">13</span>% off</p>
+                            
                         </div>
 
                         <div class="product-description">
@@ -656,7 +651,7 @@ font-size: 21px;
 
                         <div class="product-icons">
                             <div class="add-to-favorite"><span class="icon-heart"></span></div>
-                            <p><span class="discount">4</span>% off</p>
+                            
                         </div>
 
                         <div class="product-description">
@@ -684,7 +679,7 @@ font-size: 21px;
 
                         <div class="product-icons">
                             <div class="add-to-favorite"><span class="icon-heart"></span></div>
-                            <p><span class="discount">2</span>% off</p>
+                            
                         </div>
 
                         <div class="product-description">
@@ -711,7 +706,7 @@ font-size: 21px;
 
                         <div class="product-icons">
                             <div class="add-to-favorite"><span class="icon-heart"></span></div>
-                            <p><span class="discount">12</span>% off</p>
+                            
                         </div>
 
                         <div class="product-description">
@@ -739,7 +734,7 @@ font-size: 21px;
 
                         <div class="product-icons">
                             <div class="add-to-favorite"><span class="icon-heart"></span></div>
-                            <p><span class="discount">0</span>% off</p>
+                            
                         </div>
 
                         <div class="product-description">
@@ -767,7 +762,7 @@ font-size: 21px;
 
                         <div class="product-icons">
                             <div class="add-to-favorite"><span class="icon-heart"></span></div>
-                            <p><span class="discount">11</span>% off</p>
+                            
                         </div>
 
                         <div class="product-description">
@@ -795,7 +790,7 @@ font-size: 21px;
 
                         <div class="product-icons">
                             <div class="add-to-favorite"><span class="icon-heart"></span></div>
-                            <p><span class="discount">2</span>% off</p>
+                            
                         </div>
 
                         <div class="product-description">
@@ -823,7 +818,7 @@ font-size: 21px;
 
                         <div class="product-icons">
                             <div class="add-to-favorite"><span class="icon-heart"></span></div>
-                            <p><span class="discount">2</span>% off</p>
+                            
                         </div>
 
                         <div class="product-description">
@@ -851,7 +846,7 @@ font-size: 21px;
 
                         <div class="product-icons">
                             <div class="add-to-favorite"><span class="icon-heart"></span></div>
-                            <p><span class="discount">2</span>% off</p>
+                            
                         </div>
 
                         <div class="product-description">
@@ -879,7 +874,7 @@ font-size: 21px;
 
                         <div class="product-icons">
                             <div class="add-to-favorite"><span class="icon-heart"></span></div>
-                            <p><span class="discount">3</span>% off</p>
+                            
                         </div>
 
                         <div class="product-description">
@@ -907,7 +902,7 @@ font-size: 21px;
 
                         <div class="product-icons">
                             <div class="add-to-favorite"><span class="icon-heart"></span></div>
-                            <p><span class="discount">2</span>% off</p>
+                            
                         </div>
 
                         <div class="product-description">
@@ -936,7 +931,7 @@ font-size: 21px;
         
                                 <div class="product-icons">
                                     <div class="add-to-favorite"><span class="icon-heart"></span></div>
-                                    <p><span class="discount">2</span>% off</p>
+                                    
                                 </div>
         
                                 <div class="product-description">
@@ -964,7 +959,7 @@ font-size: 21px;
                 
                                         <div class="product-icons">
                                             <div class="add-to-favorite"><span class="icon-heart"></span></div>
-                                            <p><span class="discount">2</span>% off</p>
+                                            
                                         </div>
                 
                                         <div class="product-description">
@@ -992,7 +987,7 @@ font-size: 21px;
                         
                                                 <div class="product-icons">
                                                     <div class="add-to-favorite"><span class="icon-heart"></span></div>
-                                                    <p><span class="discount">2</span>% off</p>
+                                                    
                                                 </div>
                         
                                                 <div class="product-description">
@@ -1020,7 +1015,7 @@ font-size: 21px;
                                 
                                                         <div class="product-icons">
                                                             <div class="add-to-favorite"><span class="icon-heart"></span></div>
-                                                            <p><span class="discount">2</span>% off</p>
+                                                            
                                                         </div>
                                                             
                                                         <div class="product-description">
@@ -1036,10 +1031,7 @@ font-size: 21px;
                                                                 <span class="f-product-unit"></span>
                                                             </p>
                                                             <div class="add-to-cart-btn">
-                                                                      <p><span class="icon-cart-plus"></span><a href="#">Add to Cart</a></p>
-                                
-                                                                                   
-                                      
+                                                                      <p><span class="icon-cart-plus"></span><a href="#">Add to Cart</a></p>                                                                          
                             </div>
                         </div>
                     </div>
