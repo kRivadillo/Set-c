@@ -113,23 +113,23 @@ img {
 <center>
     
     <div class="product-img">
-        <img src="https://www.hardwaretimes.com/wp-content/uploads/2020/01/Best-Gaming-Keyboards-Under-50.jpg" alt="img">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRQLhbwUmlZa_kizPhhg8hfsHjgyBN_3BACqQ&usqp=CAU" alt="img">
     </dv>
 
     <div class="product-icons">
         <div class="add-to-favorite"><span class="icon-heart"></span></div>
-        <p><span class="discount">2</span>% off</p>
+    
     </div>
 
     <div class="product-description">
-        <p class="product-name">Razer, Gaming Keyboard </p>
+        <p style="font-size: 59px; font-family: monospace;">Apple Air Pods</p>
         <p class="price">
             <strong>Price:</strong>
             <del>
-                <span class="f-product-price">₱4,650</span>
+                <span class="f-product-price">₱8,490</span>
             </del>
             <ins>
-                <span class="f-cur-price"><br>Now ₱4,000</span>
+                <span class="f-cur-price"><br>Now ₱8,000</span>
             </ins>
             <span class="f-product-unit"></span>
         </p>
