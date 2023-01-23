@@ -1,7 +1,21 @@
 
-
 <style>
-    .product-wrap {
+
+    
+body {
+    position: relative;
+    background-color: #111;
+    overflow: scroll;
+          overflow-x: hidden;
+        
+        }
+
+
+        ::-webkit-scrollbar {
+        width: 0px; 
+}
+   
+        .product-wrap {
         position: relative;
         height: 360px;
         width: 260px;
@@ -56,7 +70,7 @@
     .product-description .price {
         margin-top: 0.6rem;
         text-align: center;
-        color: #000000;
+        color: #ffffff;
         font-size: 24px;
         font-weight: 600;
     }
@@ -65,27 +79,30 @@
         display: none;
     }
     
-     .add-to-cart-btn {
-        -webkit-box-align: center;
-        -ms-flex-align: center;
-        align-items: center;
-        -webkit-box-pack: center;
-        -ms-flex-pack: center;
-        justify-content: center;
-        cursor: pointer;
-        text-decoration:none;
-    }
+    .add-to-cart-btn {
+    margin-top:12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     
+}
     .product-description .add-to-cart-btn p {
-        color: rgb(0, 0, 0);
-        font-size: 1rem;
+        color: rgb(255, 255, 255);
+        font-size: 2rem;
         font-family: Franklin Gothic Medium;
         text-align: center;
         text-decoration: none;
-        padding: 0.6rem 0.8rem;
+        padding: 2.6rem 2.8rem;
         background: #67ff20;
+        text-decoration: none;
+        text-shadow:2px 2px #111;
     }
     
+a {
+    text-decoration:none;
+    color:rgb(255, 255, 255)
+}
+
     .product-name {
     text-align: center;
     padding: 12px;
@@ -98,7 +115,7 @@
     
     p {
         font-size: 40px;
-        color: rgb(0, 0, 0);
+        color: rgb(255, 255, 255);
         font-weight: 200;
     }
     
@@ -106,23 +123,49 @@ img {
     max-width: 800px;
     max-height: 800px;
 }
+.tooltip {
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted rgba(36, 87, 145, 0.322);
+}
 
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: rgba(15, 194, 9, 0.527);
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+  bottom:-120%;
+  left: 50%;
+  margin-left: -60px;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
     </style>
 
 
 <center>
     
     <div class="product-img">
+        <br>
         <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRQLhbwUmlZa_kizPhhg8hfsHjgyBN_3BACqQ&usqp=CAU" alt="img">
     </dv>
 
     <div class="product-icons">
         <div class="add-to-favorite"><span class="icon-heart"></span></div>
-    
+       
     </div>
-
+    <div class="tooltip" style="color: rgba(0, 255, 0, 0.459); text-decoration: solid; font-size: 33px;">@Tech Emporium
+        <span class="tooltiptext" style="font-size: 32px; text-align: center;">Nice</span>
+      </div>
     <div class="product-description">
-        <p style="font-size: 59px; font-family: monospace;">Apple Air Pods</p>
+        <p class="product-name" style="font-size: 70px; font-family: Georgia, 'Times New Roman', Times, serif;">Apple Air Pods</p>
         <p class="price">
             <strong>Price:</strong>
             <del>
@@ -135,6 +178,7 @@ img {
         </p>
         <div class="add-to-cart-btn">
                   <p><span class="icon-cart-plus"></span><a href="#">Buy Now</a></p>
+                  </div>
         </div>
     </div>
 </div></center>
